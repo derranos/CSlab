@@ -90,7 +90,7 @@ def clustering_main(image_matrices, k=5, hog_cell_size=(16, 16), hog_bins=9, his
 # Пример вызова функции (демонстрация использования)
 if __name__ == "__main__":
     # Путь к папке с изображениями
-    images_folder = "./functions/images"
+    images_folder = "images"
 
     # Проверка существования папки
     if not os.path.exists(images_folder):

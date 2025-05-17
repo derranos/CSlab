@@ -73,7 +73,7 @@ def data_update_main(image_matrices, rotations=(90, 180, 270), do_flip=True, noi
 
 if __name__ == "__main__":
     # Путь к папке с изображениями
-    images_folder = "./functions/images"
+    images_folder = "images"
     if not os.path.exists(images_folder):
         raise FileNotFoundError(f"Папка '{images_folder}' не найдена.")
 
@@ -96,6 +96,6 @@ if __name__ == "__main__":
         rotations=(90, 180, 270),
         do_flip=True,
         noise_variance=0.01,
-        output_dir="./functions/augmented_images"
+        output_dir="augmented_images"
     )
     print("Пути к всем аугментированным изображениям:", result['output_paths'])

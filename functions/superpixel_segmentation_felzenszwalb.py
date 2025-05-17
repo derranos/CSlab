@@ -69,7 +69,7 @@ def superpixels_main(image_matrices, scale=80, sigma=0.5, min_size=100, output_d
 
 if __name__ == "__main__":
     # Путь к папке с изображениями
-    images_folder = "./functions/images"
+    images_folder = "images"
 
     # Проверка существования папки
     if not os.path.exists(images_folder):
@@ -105,7 +105,7 @@ if __name__ == "__main__":
         scale=70,
         sigma=0.5,
         min_size=100,
-        output_dir="./functions/superpixels"
+        output_dir="superpixels"
     )
     #Поле result['superpixel_labels'] содержит списки массивов меток,
     #где каждый массив имеет форму (высота, ширина) и указывает номер суперпикселя для каждого пикселя.
